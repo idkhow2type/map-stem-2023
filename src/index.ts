@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
     res.render('index.html')
 });
 
+app.get('/maps', (req, res) => {
+    res.render('maps.html')
+});
+
 app.get('*', (req, res) => {
     res.status(404).send('404 not found');
 });

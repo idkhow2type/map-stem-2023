@@ -5,7 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="/style.css">
+        <style>
+            .map-list {
+                border-style: solid;
+                width: 35vw;
+                height: 85vh;
+                position: absolute;
+            }
+            .map-preview {
+                border-style: solid;
+                width: calc(65vw - 32px);
+                height: 85vh;
+                float: right;
+            }
+
+            input {
+                border: none;
+            }
+        </style>
+        
     </head>
+
     <body>
         <nav>
             <ul>
@@ -16,7 +37,7 @@
         <main>
             <div class="map-list">
                 <form action="">
-                    <input type="search" />
+                    <input type="search" placeholder="Search"/>
                     <button type="submit"></button>
                 </form>
                 <ul>
@@ -26,7 +47,10 @@
                     </li>
                 </ul>
             </div>
-            <iframe src="/viewmap?tools=none" frameborder="0"></iframe>
+            <div class="map-preview">
+                <!-- <iframe src="/viewmap?tools=none" frameborder="0"></iframe> -->
+                no way
+            </div>
         </main>
     </body>
 </html>
