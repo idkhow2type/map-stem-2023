@@ -1,0 +1,48 @@
+:root {
+    --div-h: 82vh;
+    --nav-h: 100vh - var(--div-h)
+}
+
+.horizontal-nav-bar {
+    width: 100vw;
+    height: var(--nav-h);
+    display: flex;
+}
+
+.map-list {
+    border-radius: 5px;
+    border-style: solid;
+    width: 35vw;
+    height: var(--div-h);
+    position: absolute;
+}
+.map-preview {
+    border-radius: 5px;
+    border-style: solid;
+    width: calc(65vw - 32px);
+    height: var(--div-h);
+    float: right;
+}
+
+.input {
+    border-radius: 5px;
+    margin-left: 1vw;
+    margin-top: 1vh;   
+    width: 33vw;
+    height: 5vh;
+    font-size: 2vh;
+}
+
+.submit {
+    margin-left: 1vw;
+    margin-top: 1vh;   
+    width: 33vw;
+    height: 5vh;
+}
+
+.map {
+    margin-left: 16px;
+    margin-top: 16px;
+    width: calc(64vw - 64px);
+    height: calc(--div-h - 32px);
+}

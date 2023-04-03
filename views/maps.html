@@ -2,33 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="/style.css">
-        <style>
-            .map-list {
-                border-style: solid;
-                width: 35vw;
-                height: 85vh;
-                position: absolute;
-            }
-            .map-preview {
-                border-style: solid;
-                width: calc(65vw - 32px);
-                height: 85vh;
-                float: right;
-            }
-
-            input {
-                border: none;
-            }
-        </style>
-        
+        <link rel="stylesheet" href="/maps.css">
     </head>
 
     <body>
-        <nav>
+        <nav class="horizontal-nav-bar">
             <ul>
                 <li><a href="">Maps</a></li>
                 <li><a href="">Make a map</a></li>
@@ -37,8 +17,8 @@
         <main>
             <div class="map-list">
                 <form action="">
-                    <input type="search" placeholder="Search"/>
-                    <button type="submit"></button>
+                    <input class="input" type="search" placeholder="Search"/>
+                    <button class="submit" type="submit">Submit item(s)</button>
                 </form>
                 <ul>
                     <li>
@@ -48,8 +28,7 @@
                 </ul>
             </div>
             <div class="map-preview">
-                <!-- <iframe src="/viewmap?tools=none" frameborder="0"></iframe> -->
-                no way
+                <iframe src="/viewmap?tools=none" frameborder="0" class="map"></iframe>
             </div>
         </main>
     </body>
