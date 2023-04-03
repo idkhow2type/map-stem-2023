@@ -21,7 +21,10 @@ app.use(express.text());
 app.set('views', './views');
 app.set('view engine', 'html');
 
-// routes start here
+
+app.get('/', (req, res) => {
+    res.render('index.html')
+});
 
 app.get('*', (req, res) => {
     res.status(404).send('404 not found');
