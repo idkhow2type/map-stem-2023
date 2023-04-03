@@ -1,12 +1,30 @@
 :root {
     --div-h: 82vh;
-    --nav-h: 100vh - var(--div-h)
+    --nav-h: 100vh - var(--div-h);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1em;
 }
 
 .horizontal-nav-bar {
-    width: 100vw;
+    width: 100%;
     height: var(--nav-h);
     display: flex;
+    padding: 1em;
+}
+.horizontal-nav-bar ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding-left: 0;   
 }
 
 .map-list {
@@ -23,11 +41,14 @@
     height: var(--div-h);
     float: right;
 }
+.map-preview iframe {
+    margin: 0;
+}
 
 .input {
     border-radius: 5px;
     margin-left: 1vw;
-    margin-top: 1vh;   
+    margin-top: 1vh;
     width: 33vw;
     height: 5vh;
     font-size: 2vh;
@@ -35,7 +56,7 @@
 
 .submit {
     margin-left: 1vw;
-    margin-top: 1vh;   
+    margin-top: 1vh;
     width: 33vw;
     height: 5vh;
 }
