@@ -1,13 +1,36 @@
 :root {
     --div-h: 82vh;
-    --nav-h: 100vh - var(--div-h)
+    --nav-h: 100vh - var(--div-h);
+    --div-space: 3vh;
 }
 
 .horizontal-nav-bar {
-    width: 100vw;
+    width: 100%;
     height: var(--nav-h);
-    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+.nav-bullet {
+    float: left;
+    display: block;
+    padding: 1em;
+    background-color: #333;
+}
+
+.nav-about {
+    float: right;
+    display: block;
+    padding: 1em;
+    background-color: #333;
+}
+
+li a:hover {
+    background-color: #111;
+  }
 
 .map-list {
     border-radius: 5px;
@@ -15,6 +38,7 @@
     width: 35vw;
     height: var(--div-h);
     position: absolute;
+    margin-top: var(--div-space);
 }
 .map-preview {
     border-radius: 5px;
@@ -22,6 +46,8 @@
     width: calc(65vw - 32px);
     height: var(--div-h);
     float: right;
+    margin-top: var(--div-space);
+
 }
 
 .input {
