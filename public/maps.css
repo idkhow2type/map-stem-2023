@@ -1,7 +1,21 @@
 :root {
-    --div-h: 82vh;
+    --div-h: 85vh;
     --nav-h: 100vh - var(--div-h);
     --div-space: 3vh;
+}
+
+body{
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+.horizontal-nav-bar a {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
 }
 
 .horizontal-nav-bar {
@@ -21,6 +35,13 @@
     background-color: #333;
 }
 
+.nav-home {
+    float: left;
+    display: block;
+    padding: 1em;
+    background-color:green;
+}
+
 .nav-about {
     float: right;
     display: block;
@@ -28,35 +49,50 @@
     background-color: #333;
 }
 
-li a:hover {
+.nav-bullet:hover {
     background-color: #111;
-  }
+}
+
+.nav-home:hover {
+    background-color: darkgreen;
+}
+
+.nav-about:hover {
+    background-color: #111;
+}
 
 .map-list {
+    background-color: dimgray;
     border-radius: 5px;
     border-style: solid;
     width: 35vw;
     height: var(--div-h);
     position: absolute;
     margin-top: var(--div-space);
+    margin-left: 8px;
 }
+
 .map-preview {
+    background-color:dimgray;
     border-radius: 5px;
     border-style: solid;
     width: calc(65vw - 32px);
     height: var(--div-h);
     float: right;
     margin-top: var(--div-space);
+    margin-right: 8px;
 
 }
 
 .input {
+    border:none;
     border-radius: 5px;
     margin-left: 1vw;
     margin-top: 1vh;   
     width: 33vw;
     height: 5vh;
     font-size: 2vh;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .submit {
@@ -64,6 +100,7 @@ li a:hover {
     margin-top: 1vh;   
     width: 33vw;
     height: 5vh;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .map {
@@ -71,4 +108,8 @@ li a:hover {
     margin-top: 16px;
     width: calc(64vw - 64px);
     height: calc(--div-h - 32px);
+}
+
+iframe {
+    font-family: 'Roboto Mono', monospace;
 }
