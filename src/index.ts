@@ -29,6 +29,9 @@ app.get('/', (req, res) => {
 app.get('/maps', (req, res) => {
     res.render('maps.html')
 });
+app.get('/viewmaps', (req, res) => {
+    res.render('viewer.html')
+});
 
 app.get('*', (req, res) => {
     res.status(404).send('404 not found');
