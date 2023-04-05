@@ -29,7 +29,8 @@ app.get('/', (req, res) => {
 app.get('/maps', (req, res) => {
     res.render('maps.html')
 });
-app.get('/viewmaps', (req, res) => {
+
+app.get('/viewmap', (req, res) => {
     res.render('viewer.html')
 });
 
